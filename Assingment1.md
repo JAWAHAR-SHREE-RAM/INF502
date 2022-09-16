@@ -70,6 +70,9 @@ ram@Jawahars-MacBook-Pro handson % git log --graph --all
   Date:   Wed Aug 14 23:08:47 2019 -0700
   
        Creating all files (all empty)
+       
+A visual representation of how a developer's multiple development pipelines have branched and merged over time is produced by the git log graph command. In this case, git log —graph —all is used to show all the branches. The head master branch is the first to be shown, and changes were made there before more math knowledge was added to the function. Then, after creating all of the files, the draft of A.py was inserted.
+
 ```
 
 3. Use `git diff BRANCH_NAME` to view the differences from a branch and the current branch. Summarize the difference from master to the other branch.
@@ -100,6 +103,8 @@ index e69de29..c63f94c 100644
 @@ -0,0 +1 @@
 +# Another file that will receive a line of code... at least.
 
+When a Git repository is first established, a branch will automatically be created. The master branch is the default branch. A Git repository allows for the creation of numerous additional branches. The branch that has code in production is called master. In due course, all development code is merged into master. A variety of supporting branches are used during the development cycle, and then they are all merged into the master.
+
 ```
 
 4. Write a command sequence to merge the non-master branch into `master`.
@@ -122,8 +127,16 @@ git checkout math
    
 6. Edit B.py adding the following source code below the content you have there.
 ```
-print 'I know math, look:'
-print 2+2
+ram@Jawahars-MacBook-Pro handson % git add B.py        
+ram@Jawahars-MacBook-Pro handson % git status          
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   B.py
+
+ram@Jawahars-MacBook-Pro handson % git commit -m "B.py"
+[master b5ce381] B.py
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 ```
 
 7. Write a command (or sequence) to commit your changes.
@@ -176,6 +189,9 @@ git rebase
 13. Complete Part 2. Then, come back here and answer the following:
 Report your experience of submitting the Part 2. Please, include the steps you followed, the commands you used, and the hurdles you faced (within the file you created for the **Part 1**).
 ```
+First it was difficult for me to fnd where should I need to create the .md for part2.
+After finding it and adding all the details of the recent paper which I have gone through. Again I struggeld to find how to perform pull request. And finally some how I did the pull request and sharing my experience of the part 2. But it was a great oppurtunity for me to learn about the Git. 
 
+Thank you ANA..
 
 ```
