@@ -13,7 +13,7 @@ All together, these wallets have $value in them.
 All together, the total value of these wallets is worth $value dimes.
 Please try to think about different functions to complete your work.
 
-[Code link :](https://github.com/JAWAHAR-SHREE-RAM/INF502/blob/main/CODE/Assingement3/1.py)
+[Code link](https://github.com/JAWAHAR-SHREE-RAM/INF502/blob/main/CODE/Assingement3/1.py)
 
 Code:
 
@@ -74,7 +74,7 @@ Load periodic table from JSON file
 Exit the program
 Make sure you do the appropriate communication with the user to get the necessary information to complete each step.
 
-[Code link:](https://github.com/JAWAHAR-SHREE-RAM/INF502/blob/main/CODE/Assingement3/2.py)
+[Code link](https://github.com/JAWAHAR-SHREE-RAM/INF502/blob/main/CODE/Assingement3/2.py)
 
 Code:
 
