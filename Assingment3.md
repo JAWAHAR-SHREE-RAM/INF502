@@ -74,6 +74,7 @@ Load periodic table from JSON file
 Exit the program
 Make sure you do the appropriate communication with the user to get the necessary information to complete each step.
 
+[Code link:](https://github.com/JAWAHAR-SHREE-RAM/INF502/blob/main/CODE/Assingement3/2.py)
 
 Code:
 
