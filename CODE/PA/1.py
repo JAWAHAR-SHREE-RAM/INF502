@@ -204,14 +204,20 @@ def options(A, B):  # Function call for the options(). Which peforms the task ac
 
 
 def main():  # Function definition for the main.
-    file_name1 = input(
-        "Enter the filename of the sequences \n")  # variable file_name1 is used to get the filename for the sequence A from the user.
-    file1 = open(file_name1)  # open the file name 1.txt.
+    file_name1 = input("Enter the filename of the sequences \n")  # variable file_name1 is used to get the filename for the sequence A from the user.
+    try:
+        file1 = open(file_name1)  # open the file name 1.txt.
+    except FileNotFoundError:        # Exceptional handling FileNotFoundError
+        print("File not found!")
+        return
     content1 = file1.readlines()  # read the file opened line by line and storing in variable content1.
 
-    file_name2 = input(
-        "Enter the filename of the sequences \n")  # variable file_name2 is used to get the filename for the sequence B from the user.
-    file2 = open(file_name2)  # open the file name 2.txt.
+    file_name2 = input("Enter the filename of the sequences \n")  # variable file_name2 is used to get the filename for the sequence B from the user.
+    try:
+        file2 = open(file_name2)  # open the file name 1.txt.
+    except FileNotFoundError as e:        # Exceptional handling FileNotFoundError
+        print(e)
+        return
     content2 = file2.readlines()  # read the file opened line by line and storing in variable content2.
 
     A = list(content1[0])  # list A to store first line of file in list format.
